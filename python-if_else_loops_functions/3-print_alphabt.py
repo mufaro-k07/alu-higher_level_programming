@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-print("{}".format("".join(chr(c) for c in range(97, 123) if c != 101 and c != 113)), end="")
+print("".join(
+    [chr(i) for i in range(97, 123) if i != 101 and i != 113]
+), end="")
