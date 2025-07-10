@@ -1,14 +1,16 @@
 #!/usr/bin/python3
 """
-This module defines a class Square with encapsulation, validation and and area computation method
+This module defines a class Square with encapsulation, validation,
+and area computation method.
 """
+
 
 class Square:
     """A class that defines a square by its size with a setter and getter"""
     def __init__(self, size=0):
         """
         Initialise a new Square Instance.
-        
+
         Args:
             size(int): The size of the square (default is 0).
         """
@@ -18,7 +20,7 @@ class Square:
     def size(self):
         """
         Get current size of the square.
-    
+
         Returns:
             int: The size of the square.
         """
