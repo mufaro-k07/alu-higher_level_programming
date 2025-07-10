@@ -55,10 +55,10 @@ class Square:
     def position(self, value):
         """Set the position of the square with validation."""
         if (
-            not isinstance(value, tuple)
-            or len(value) != 2
-            or not all(isinstance(n, int) for n in value)
-            or not all(n >= 0 for n in value)
+            not isinstance(value, tuple) or
+            len(value) != 2 or
+            not all(isinstance(n, int) for n in value) or
+            not all(n >= 0 for n in value)
         ):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
@@ -85,4 +85,3 @@ class Square:
         # Print each row of the square
         for _ in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)
-
