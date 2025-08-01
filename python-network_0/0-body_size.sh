@@ -1,9 +1,3 @@
 #!/bin/bash
-
-if [ -z "$1" ]; then
-  echo "Usage: $0 <URL>" >&2
-  exit 1
-fi
-
-# Fetch the body silently and count bytes
+# Script that takes a URL, sends a request, and displays the size of the response body in bytes
 curl -s "$1" | wc -c
